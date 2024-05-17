@@ -8,7 +8,7 @@ let vizualDesk = vizualCrdBck.slice(1).map((elem, key) => {
 
 export default function VizDesk() {
     return (
-        <div className='card-desk'>
+        <div className='card-desk second-row'>
             {vizualDesk}
         </div>
     )

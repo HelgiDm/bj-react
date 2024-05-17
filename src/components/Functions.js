@@ -45,7 +45,7 @@ const cardRandom = {
         while (n <= 36) {
             const objCardBack = {};
             objCardBack.key = n;
-            objCardBack.top = `${20 - n * 0.05}vh`;
+            objCardBack.top = `${0 - n * 0.05}vh`;
             objCardBack.left = `${6 - n * 0.05}vw`;
             arrCardBack.push(objCardBack);
             n += 1;

@@ -17,19 +17,22 @@ export default function GameBoard() {
 
     return (
         <> 
-
+            <div className='first-row'>
+                <div className="dlr-field"></div>
+                <div className="dlr-score">
+                    <p>Score: </p>
+                    <p id="dlr-numb">0</p>
+                </div>
+            </div>
             <VizualDesk />
-            <img src={vizual}></img>
-            <div className="field"></div>
-            <div className="usr-score">
-                <p>Score: </p>
-                <p id="numb">0</p>
+            <div className='third-row'>
+                <div className="field"></div>
+                <div className="usr-score">
+                    <p>Score: </p>
+                    <p id="numb">0</p>
+                </div>
             </div>
-            <div className="dlr-field"></div>
-            <div className="dlr-score">
-                <p>Score: </p>
-                <p id="dlr-numb">0</p>
-            </div>
+
             <div className="card-back"></div>
         </>
     )
