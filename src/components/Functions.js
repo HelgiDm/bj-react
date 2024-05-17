@@ -41,16 +41,16 @@ const cardRandom = {
 
     vizualCardBack() {
         let n = 0;
+        const arrCardBack = ['images/cardBack.png'];
         while (n <= 36) {
-            const arrCardBack = ['images/cardBack.png'];
             const objCardBack = {};
             objCardBack.key = n;
-            objCardBack.top = `${20 - n * 0.05}vh`,
-            objCardBack.left = `${6 - n * 0.05}vw`,
-            arrCardBack.push;
+            objCardBack.top = `${20 - n * 0.05}vh`;
+            objCardBack.left = `${6 - n * 0.05}vw`;
+            arrCardBack.push(objCardBack);
             n += 1;
-            return arrCardBack;
         }
+        return arrCardBack;
     },
 
 
