@@ -1,0 +1,41 @@
+nav .score {
+    margin-left: 150px;
+    width: 200px;
+    color: #B39584;
+    font-size: 20px;
+    background-color: #59884E0f;
+    border-radius: 15px;
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    position: absolute;
+    top: 4px;
+    left: 60vw;
+}
+
+button {
+    border-radius: 8px;
+    font-size: 17px;
+    background-color: #e9b90bd8;
+   /* background: linear-gradient(to bottom right, #b11313a1, #331A0C);*/
+    color: #db570b;
+}
+
+button:hover {
+    text-shadow:
+    0 0 0 white,
+    0 0 1em white;
+}
+
+#buttons {
+    /*display: flex;*/
+    justify-content: center;
+    position: absolute;
+    top: 4vh;
+    left: 41px;
+}
+
+#buttons button {
+    margin-right: 7px;
+}
+
