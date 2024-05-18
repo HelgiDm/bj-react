@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import './GameBoard.css';
-import { vizual} from './Functions';
-import VizualDesk from './VizualCardDesk';
+// import { yourCard, vizual } from './Functions';
+import VizualDeck from './VizualCardDeck';
+
 
 
 
@@ -11,9 +12,10 @@ import VizualDesk from './VizualCardDesk';
 
 
 export default function GameBoard() {
- 
-    
-
+    // let yourPick = [];
+    // console.log(yourPick);
+    // yourPick.push(yourCard);
+    // console.log(yourPick);
 
     return (
         <> 
@@ -24,7 +26,7 @@ export default function GameBoard() {
                     <p id="dlr-numb">0</p>
                 </div>
             </div>
-            <VizualDesk />
+            <VizualDeck />
             <div className='third-row'>
                 <div className="field"></div>
                 <div className="usr-score">

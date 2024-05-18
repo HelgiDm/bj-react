@@ -1,0 +1,11 @@
+.card-deck {
+    position: relative;
+}
+
+.card-deck img {
+    position: absolute;
+    width: 140px;
+    border-radius: 10px;
+    height: 190px;
+
+}

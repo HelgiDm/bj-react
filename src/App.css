@@ -1,6 +1,7 @@
 body {
   height: 100vh;
-  background: linear-gradient(to bottom right, #237819, #13330c);
+  /* background: linear-gradient(to bottom right, #059c41, #048737); */
+  background-color: #059c41;
   margin: 0;
 }
 
@@ -13,24 +14,24 @@ body {
 nav {
   width: 100vw;
   flex-grow: 1;
-  background-color: rgb(192, 45, 45);
+  /* background-color: rgb(192, 45, 45); */
 
 }
 
 .first-row {
   width: 100vw;
   flex-grow: 3;
-  background-color: black;
+  /* background-color: black; */
 }
 
 .second-row {
   width: 100vw;
   flex-grow: 2;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 
 .third-row {
   width: 100vw;
   flex-grow: 3;
-  background-color: rgb(0, 106, 255);
+  /* background-color: rgb(0, 106, 255); */
 }
