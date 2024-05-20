@@ -1,4 +1,5 @@
-import { deck, suits, values, image } from './indata'
+import { deck, suits, values, image } from './indata';
+// import React, { useEffect, useState } from 'react';
 
 function makeDeck() {
     let n = 0;
@@ -23,7 +24,7 @@ function drawCard() {
 
 function vizual() {
     return drawCard().img;
-}
+};
 
 function vizualCardBack() {
     let n = 0;
@@ -40,19 +41,13 @@ function vizualCardBack() {
 }
 
 
+
+
+
+
+
+
+
+
+
 export { makeDeck, drawCard, vizual, vizualCardBack }
-
-
-
-
-
-
-// cardRandom = {
-
-// }
-
-// cardRandom.drawCard()
-
-// export { drawCard }; // return Card Object
-// export let vizual = cardRandom.vizual(); // return value for <img src="">
-// export let vizualCrdBck = cardRandom.vizualCardBack(); // return array, containing of value for <img src=""> and coordinates for cards in the desk

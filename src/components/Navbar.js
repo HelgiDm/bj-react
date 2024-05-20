@@ -1,35 +1,19 @@
+import React, { useEffect, useState } from 'react';
 import './Navbar.css';
-// import { drawCard, vizual } from './Functions';
-import { useState } from 'react';
+import { makeDeck, drawCard, vizual, vizualCardBack, handleClick, DrawPick } from './Functions';
+// import { useEffect, useState } from 'react';
+let yourPick = [];
 
-export default function Navbar() {
+
+
+export function Navbar({ handleClick }) {
     
-    // const [pick, setPick] = useState([]);
-
-    // function handleClick() {
-    //     setPick([...pick, yourCard, yourCard]);
-    //     console.log(pick);
-    // }
-        
-    // function DrawPick() {
-    //     pick.map((card, key) => {
-    //         return <img src={vizual}></img>
-    //     })
-    // }
-        
-
-
-
-
-
-
-
-
-
+    
+    
     return (
         <nav>
             <div id="buttons">
-                <button id="start-button" type="submit">Click to start!</button>
+                <button id="start-button" type="submit" onClick={handleClick}>Click to start!</button>
                 <button id="pick-card" type="submit">Pick A Card</button>
                 <button id="fin">Finish Turn</button>
                 <button id="reset" type="reset">Reset</button>
@@ -37,3 +21,5 @@ export default function Navbar() {
         </nav>
     )
 }
+
+export { yourPick }

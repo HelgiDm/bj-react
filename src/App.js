@@ -1,17 +1,25 @@
 import './App.css';
-import Navbar from './components/Navbar'
-import GameBoard from './components/GameBoard'
-import { makeDeck } from './components/Functions';
+import React, { useState } from 'react';
+import { Navbar } from './components/Navbar';
+import GameBoard from './components/GameBoard';
+import { makeDeck, drawCard } from './components/Functions';
 
 
 function App() {
-  console.log(makeDeck())
+  const [pick, setPick] = useState([]);
+
+  function handleClick() {
+    makeDeck();
+    setPick([...pick, drawCard(), drawCard()]);
+
+    console.log(pick)
+}
 
 
   return (
    <>
-    <Navbar />
-    <GameBoard />
+    <Navbar handleClick={handleClick}/>
+    <GameBoard pick={pick}/>
 
    </>
   );

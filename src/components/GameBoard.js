@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import './GameBoard.css';
-// import { yourCard, vizual } from './Functions';
+import { yourCard, vizual } from './Functions';
 import VizualDeck from './VizualCardDeck';
+// import { yourPick } from './Navbar';
 
 
 
@@ -11,12 +12,18 @@ import VizualDeck from './VizualCardDeck';
 
 
 
-export default function GameBoard() {
-    // let yourPick = [];
-    // console.log(yourPick);
-    // yourPick.push(yourCard);
-    // console.log(yourPick);
+export default function GameBoard( {pick} ) {
+    
+// function DrawPick( ) {
+//     console.log('hello')
+//     pick.map((card, index) => {
+//         return <img key={index} src={vizual}></img>
+//     })
+// }
 
+
+
+    
     return (
         <> 
             <div className='first-row'>
@@ -28,7 +35,9 @@ export default function GameBoard() {
             </div>
             <VizualDeck />
             <div className='third-row'>
-                <div className="field"></div>
+                <div className="field">
+                    {pick.map((card, index) => {return <img key={index} src={card.img}></img>})}
+                </div>
                 <div className="usr-score">
                     <p>Score: </p>
                     <p id="numb">0</p>
