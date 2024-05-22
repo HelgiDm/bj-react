@@ -27,7 +27,7 @@ function vizual() {
 };
 
 function vizualCardBack() {
-    let n = 0;
+    let n = 1;
     const arrCardBack = ['images/cardBack.png'];
     while (n <= 36) {
         const objCardBack = {};

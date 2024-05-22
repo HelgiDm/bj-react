@@ -12,18 +12,9 @@ import VizualDeck from './VizualCardDeck';
 
 
 
-export default function GameBoard( {pick} ) {
+export default function GameBoard( {pick, m} ) {
     
-// function DrawPick( ) {
-//     console.log('hello')
-//     pick.map((card, index) => {
-//         return <img key={index} src={vizual}></img>
-//     })
-// }
-
-
-
-    
+      
     return (
         <> 
             <div className='first-row'>
@@ -33,7 +24,7 @@ export default function GameBoard( {pick} ) {
                     <p id="dlr-numb">0</p>
                 </div>
             </div>
-            <VizualDeck />
+            <VizualDeck m={m}/>
             <div className='third-row'>
                 <div className="field">
                     {pick.map((card, index) => {return <img key={index} src={card.img}></img>})}

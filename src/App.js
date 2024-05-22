@@ -7,20 +7,20 @@ import { makeDeck, drawCard } from './components/Functions';
 
 function App() {
   const [pick, setPick] = useState([]);
+  const [m, setM] = useState([37]);
 
   function handleClick() {
     makeDeck();
     setPick([...pick, drawCard(), drawCard()]);
-
-    console.log(pick)
+    setM(m - 2);
+    
 }
 
 
   return (
    <>
     <Navbar handleClick={handleClick}/>
-    <GameBoard pick={pick}/>
-
+    <GameBoard pick={pick} m={m}/>
    </>
   );
 }
